@@ -1,0 +1,294 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+:root{
+  --background:#0f172a;
+  --foreground:#f8fafc;
+  --primary:#6cff6c;
+  --accent:#22d3ee;
+  --border:rgba(255,255,255,.15);
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--background);
+  color:var(--foreground);
+  font-family:"Inter","Noto Sans TC",sans-serif;
+  margin:0;
+}
+
+.gradient-text{
+  background:linear-gradient(135deg,#fff,#6cff6c);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.text-glow{
+  text-shadow:0 0 24px rgba(108,255,108,.6);
+}
+
+.grid-bg{
+  background-image:
+    linear-gradient(rgba(108,255,108,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(108,255,108,.05) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+
+.border-glow{
+  box-shadow:
+    0 0 0 1px rgba(108,255,108,.3),
+    0 0 32px rgba(108,255,108,.15);
+}
+
+@keyframes floatSlow{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-12px)}
+}
+
+.animate-float{
+  animation:floatSlow 6s ease-in-out infinite;
+}
+</style>
+
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-black/40 border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#top" class="font-bold tracking-widest text-green-400">
+      AI時代的美
+    </a>
+
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about">我的背景</a>
+      <a href="#jensen">黃仁勳</a>
+      <a href="#aesthetic">美感分析</a>
+      <a href="#action">行動提案</a>
+      <a href="#future">未來展望</a>
+    </nav>
+  </div>
+</header>
+
+<section id="top" class="min-h-screen grid-bg flex items-center pt-24">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <div class="uppercase tracking-[0.3em] text-green-400 text-xs mb-6">
+        Intelligence · Future · Aesthetic
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+        <span class="gradient-text">解碼未來的</span>
+        <br>
+        智慧之光
+      </h1>
+
+      <p class="mt-6 text-slate-300 text-lg leading-relaxed">
+        智慧之光：從黃仁勳到 AI 美感時代。<br>
+        探索科技、創新與人性美感交會的未來世界。
+      </p>
+
+      <div class="mt-8 flex gap-4 flex-wrap">
+        <a href="#jensen"
+           class="px-6 py-3 rounded bg-green-400 text-black font-semibold border-glow">
+          開始探索 →
+        </a>
+
+        <a href="#about"
+           class="px-6 py-3 rounded border border-white/20">
+          關於作者
+        </a>
+      </div>
+    </div>
+
+    <div class="animate-float">
+      <img
+        src="https://duk.tw/fNboNS.jpg"
+        class="rounded-2xl border border-green-400/30 border-glow w-full"
+      >
+    </div>
+
+  </div>
+</section>
+
+<section class="py-24 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="text-green-400 tracking-[0.3em] text-xs mb-4">
+      PROLOGUE
+    </div>
+
+    <h2 class="text-4xl font-bold gradient-text mb-6">
+      在 AI 崛起的時代
+    </h2>
+
+    <p class="text-slate-300 leading-loose">
+      真正改變世界的從來不是科技本身，而是運用科技的人。
+      從黃仁勳的創新精神出發，探索科技、美感與人性的未來可能。
+      這個網站不只是一份報告，也是一個可以被獨立閱讀、自由探索的互動式簡報。
+    </p>
+  </div>
+</section>
+
+<section id="about" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <div class="text-green-400 mb-4">01 · MY BACKGROUND</div>
+
+      <h2 class="text-5xl font-bold mb-6">
+        我的專業背景
+      </h2>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        我是高科大資管系學生，目前就讀國立高雄科技大學資訊管理系。
+      </p>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        我的興趣是研究科技與攝影，喜歡觀察科技如何影響世界，
+        也喜歡透過鏡頭捕捉光影、氛圍與情感。
+      </p>
+
+      <p class="text-slate-300 leading-loose">
+        希望未來能創造出有溫度的科技產品。
+      </p>
+    </div>
+
+    <img src="https://duk.tw/xTYI4d.jpg" class="rounded-xl">
+  </div>
+</section>
+
+<section id="jensen" class="py-24 px-6 bg-white/5">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <img src="https://duk.tw/kKzk02.jpg" class="rounded-xl">
+
+    <div>
+      <div class="text-green-400 mb-4">
+        02 · THE PROTAGONIST
+      </div>
+
+      <h2 class="text-5xl font-bold mb-6">
+        主角介紹：黃仁勳
+      </h2>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        NVIDIA 共同創辦人暨執行長。
+      </p>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        帶領 NVIDIA 成為全球 AI 革命的重要推手。
+      </p>
+
+      <blockquote class="border-l-4 border-green-400 pl-4 italic">
+        科技不只是硬體和算力，也是一種推動世界前進的想像力。
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+<section id="aesthetic" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <div class="text-green-400 mb-4">
+        03 · AESTHETIC ANALYSIS
+      </div>
+
+      <h2 class="text-5xl font-bold mb-6">
+        美感分析
+      </h2>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        AI 是科技與人性結合的創造力展現。
+      </p>
+
+      <p class="text-slate-300 leading-loose mb-4">
+        當科技能理解需求、回應情緒與協助創作時，
+        它便具有了溫度。
+      </p>
+
+      <p class="text-slate-300 leading-loose">
+        功能與美感並不是衝突，而是完整體驗的一部分。
+      </p>
+    </div>
+
+    <img src="https://duk.tw/hvtCnb.jpg" class="rounded-xl">
+  </div>
+</section>
+
+<section id="action" class="py-24 px-6 bg-white/5">
+  <div class="max-w-6xl mx-auto">
+
+    <h2 class="text-center text-5xl font-bold gradient-text mb-12">
+      我的美感行動提案
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="p-8 rounded-xl border border-white/10">
+        <h3 class="text-xl font-bold mb-3">
+          每日美感觀察
+        </h3>
+        <p class="text-slate-300">
+          記錄網站、照片與產品的設計特色。
+        </p>
+      </div>
+
+      <div class="p-8 rounded-xl border border-white/10">
+        <h3 class="text-xl font-bold mb-3">
+          AI 共創練習
+        </h3>
+        <p class="text-slate-300">
+          透過 AI 協助靈感發想與創作。
+        </p>
+      </div>
+
+      <div class="p-8 rounded-xl border border-white/10">
+        <h3 class="text-xl font-bold mb-3">
+          攝影與構圖訓練
+        </h3>
+        <p class="text-slate-300">
+          培養觀察力與畫面掌握能力。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="future" class="py-32 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-green-400 text-xs tracking-[0.3em] mb-4">
+      FUTURE OUTLOOK
+    </div>
+
+    <h2 class="text-6xl font-bold mb-10">
+      <span class="gradient-text">未來的科技</span>
+      <br>
+      不只是更聰明
+    </h2>
+
+    <p class="text-slate-300 text-lg leading-loose">
+      當 AI 開始學會創造與表達，
+      科技將成為情感與智慧的延伸。
+    </p>
+
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-12 text-center">
+  <h3 class="text-4xl font-bold gradient-text text-glow">
+    Thanks For Watching
+  </h3>
+
+  <p class="mt-6">
+    吳沛樺
+  </p>
+
+  <p class="text-slate-400">
+    國立高雄科技大學 資訊管理系
+  </p>
+</footer>
